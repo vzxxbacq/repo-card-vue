@@ -1,24 +1,55 @@
 # repo-card-vue
 
-## Project setup
-```
-npm install
-```
+Simple github repo card vue.js components.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Demo
+![demo](public/demo.png)
 
-### Compiles and minifies for production
-```
-npm run build
-```
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Usage
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+1. Use offline data
+    
+    ```vue
+    <div>
+      <RepoCard :OfflineData="myRepoData"/>
+    </div>
+    
+    <script>
+    export default {
+      data(){
+        return {
+          myRepoData: {
+            url: "https://github.com/vzxxbacq/speaker-recognition-papers",
+            repoName: "speaker-recognition-papers",
+            isFork: true,
+            forkPath: "https://github.com/vzxxbacq/speaker-recognition-papers",
+            forkName: "ssssForkExp",
+            description: "Share some recent speaker recognition papers and their implementations",
+            lang: "Python",
+            stars: 88,
+            forks: 24
+          }
+        }
+      }
+    }
+    </script>
+    ```
+
+2. Use online data
+
+    ```vue
+    <div>
+      <RepoCard :repo="myRepoData"/>
+    </div>
+    
+    <script>
+    export default {
+      data(){
+        return {
+          repo: "vzxxbacq/speaker-recognition-papers"
+        }
+      }
+    }
+    </script>
+    ```
