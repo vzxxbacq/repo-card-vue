@@ -3,8 +3,9 @@
 Simple github repo card vue.js components.
 
 ## Demo
-![demo](public/demo.png)
+[Check Online Demo](https://vzxxbacq.github.io/repo-card-vue/)
 
+![demo](public/demo.png)
 
 ## Usage
 
