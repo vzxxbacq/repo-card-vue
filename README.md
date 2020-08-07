@@ -7,6 +7,10 @@ Simple github repo card vue.js components.
 
 ![demo](public/demo.png)
 
+## Dependencies
+* vue
+* axios
+
 ## Usage
 
 1. Use offline data
@@ -41,7 +45,7 @@ Simple github repo card vue.js components.
 
     ```vue
     <div>
-      <RepoCard :repo="myRepoData"/>
+      <RepoCard :repo="repo"/>
     </div>
     
     <script>
